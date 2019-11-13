@@ -17,7 +17,7 @@ var connection = mysql.createConnection({
     database: 'Bamazon_db'
 });
 
-// validateInput makes sure that the user is supplying only positive integers for their inputs
+// validateInput makes sure that costomers is supplying only positive numbers for their inputs
 function validateInput(value) {
     var integer = Number.isInteger(parseFloat(value));
     var sign = Math.sign(value);
@@ -29,7 +29,7 @@ function validateInput(value) {
     }
 }
 
-// promptUserPurchase will prompt the user for the item/quantity they would like to purchase
+// promptUserPurchase will prompt the user for the item/quantity they want to buy
 function promptUserPurchase() {
     // console.log('___ENTER promptUserPurchase___');
 
