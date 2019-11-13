@@ -25,7 +25,7 @@ function validateInput(value) {
     if (integer && (sign === 1)) {
         return true;
     } else {
-        return 'Please enter a whole non-zero number.';
+        return 'Please enter whole number, non-zero, no negatives';
     }
 }
 
